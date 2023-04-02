@@ -1,0 +1,63 @@
+3. Solve 
+Create a java application for the following.
+
+3.1 Create a Customer class , with data members (all private : tight encapsulation)
+name(String),email(String),age(int), creditLimit(double)
+
+Do not supply any constructor first(this is to confirm a default constructor)
+Add a method to return all customer details , in a string .
+
+3.2 Create RegisterCustomer class with main method
+Create a customer class instance , using default constructor.
+Display customer details.
+Observe n conclude.
+
+3.3 Now add a parameterized constructor to the  Customer class
+
+3.4 Create RegisterCustomer2 class with main method
+Accept customer details from user using scanner.
+Display customer details.
+
+4. Solve Tank assignment along with memory picture.
+
+What will be the output ?
+
+class Tank {
+  private int level;
+  Tank(int level)
+   {
+     this.level=level;
+   }
+  public void setLevel(int level)
+  {
+    this.level=level;
+  }
+  public int getLevel()
+  {
+    return this.level;
+  }
+}	
+
+public class Assignment {
+  public static void main(String[] args) {
+    Tank t1 = new Tank(10);
+    Tank t2 = new Tank(20);
+     System.out.println("1: t1.level: " + t1.getLevel() +
+          ", t2.level: " + t2.getLevel());
+    t1 = t2;
+    System.out.println("2: t1.level: " + t1.getLevel() +
+          ", t2.level: " + t2.getLevel());
+    t1.setLevel(27);
+     System.out.println("3: t1.level: " + t1.getLevel() +
+          ", t2.level: " + t2.getLevel());
+    t2.setLevel(t1.getLevel()+10);
+     System.out.println("4: t1.level: " + t1.getLevel() +
+          ", t2.level: " + t2.getLevel());
+  }
+}
+
+Are there any objects marked for GC ?
+
+
+
+
