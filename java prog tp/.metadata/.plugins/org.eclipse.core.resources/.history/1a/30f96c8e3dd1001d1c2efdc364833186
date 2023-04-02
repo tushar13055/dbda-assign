@@ -1,0 +1,21 @@
+//7. Accept range of numbers (begin value & end value) from user , using scanner.
+//Print all prime nos from the range
+//Try writing the functionality of checking for prime number in a method n call it from main
+
+public class PrimeNo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 int x = 10;
+		int y=100;
+		for(int z=x;z<y;z++) {
+			for(int i =0;i>z/2;i++) {
+				if (z %i ==0) {
+					System.out.println(z);
+					}
+		}
+
+	}
+
+}
+}

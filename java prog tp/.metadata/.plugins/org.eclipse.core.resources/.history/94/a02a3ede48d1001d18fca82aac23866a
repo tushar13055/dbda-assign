@@ -1,0 +1,20 @@
+//
+//9. Find the compound interest n the amount 
+//Accept principle , interest rate n time period in years from user , using scanner.
+//Formula : 
+//Compound Interest=Principle*(1+(rate / 100))^time – Principle
+//time : time period in years.
+public class CompoundInterest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int p=50000;
+		int i=8;
+		int n=5;
+		double interest_earned;
+		interest_earned=(p*(Math.pow((1+(i/100)),n)))-p;
+		System.out.println(interest_earned);
+
+	}
+
+}
